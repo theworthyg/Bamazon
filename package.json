@@ -1,0 +1,23 @@
+{
+  "name": "bamazon",
+  "version": "1.0.0",
+  "description": "bamazon JSON",
+  "main": "customer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theworthyg/Bamazon.git"
+  },
+  "author": "WG",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/theworthyg/Bamazon/issues"
+  },
+  "homepage": "https://github.com/theworthyg/Bamazon#readme",
+  "dependencies": {
+    "inquirer": "^6.2.2",
+    "mysql": "^2.16.0"
+  }
+}
