@@ -1,4 +1,4 @@
-
+select * from products;
 
 USE bamazon_db;
 
@@ -14,3 +14,4 @@ INSERT INTO products (ProductName, departmentName, price, stockQuantity) values 
 INSERT INTO products (ProductName, departmentName, price, stockQuantity) values ("Dirtbike", "Vehicles", 3000, 5);
 INSERT INTO products (ProductName, departmentName, price, stockQuantity) values ("Flamethrower", "Tools", 5, 5);
 
+select * from products;

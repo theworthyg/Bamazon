@@ -12,3 +12,4 @@ CREATE TABLE products (
   
 PRIMARY KEY (ItemID)
 );
+

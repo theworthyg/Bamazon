@@ -32,7 +32,7 @@ connection.query("SELECT * FROM products", function (err, res) {
 	{
 		name: "qty",
 		type: "input",
-		message: "You will claim your write-off later, so how many of this product did you have in mind?"
+		message: "You will claim your write-off later, what quantity did you have in mind?"
 
 	}]).then(function (productObj) {
 		if (productObj.product.toUpperCase() == "Y") {
@@ -45,7 +45,7 @@ connection.query("SELECT * FROM products", function (err, res) {
 
 					var cost = res[0].Price * productObj.qty
 					console.log("-----------------------------------");
-					console.log("Your order is validated! \nThe total cost is $" + cost.toFixed(2) + "\nThank you for ordering")
+					console.log("Order is validated! \nTotal cost is $" + cost.toFixed(2) + "\nThank you for ordering")
 
 					var newQty = res[0].StockQuantity - productObj.qty
 
@@ -61,7 +61,7 @@ connection.query("SELECT * FROM products", function (err, res) {
 				}
 				else {
 					console.log("-----------------------------------");
-					console.log("Sorry, we do not have enough in stock. \nWe only have " + res[0].StockQuantity + " units of " + ansProd.product + ". \nPlease retry your order. \nThank you!")
+					console.log("Sorry, we do not have enough in stock. \n Please retry your order. \nThank you!")
 				}
 			})
 		}
